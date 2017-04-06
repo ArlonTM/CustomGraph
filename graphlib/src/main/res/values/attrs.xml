@@ -1,0 +1,44 @@
+<resources>
+
+    <declare-styleable name="Graph">
+
+        <attr name="shouldFill" format="boolean" />
+        <attr name="fillColour" format="reference|color" />
+        <attr name="borderColour" format="reference|color" />
+
+        <attr name="borderType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="plain" value="1" />
+            <enum name="dashed" value="2" />
+        </attr>
+        
+        <attr name="borderSize" format="dimension|reference" />
+
+        <attr name="shouldReverse" format="boolean" />
+
+        <attr name="jointType" format="enum">
+            <enum name="straight" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+
+        <!--<attr name="shouldAnimate" format="boolean" />
+        <attr name="animationInterval" format="integer" />-->
+
+        <attr name="pointSize" format="dimension|reference" />
+
+        <attr name="pointType" format="enum">
+            <enum name="circle" value="0" />
+            <enum name="square" value="1" />
+        </attr>
+
+        <attr name="graphWidth" format="dimension|reference" />
+        <attr name="graphHeight" format="dimension|reference" />
+
+        <attr name="scaleType" format="enum">
+            <enum name="fit" value="0" />
+            <enum name="overflow" value="1" />
+        </attr>
+
+    </declare-styleable>
+
+</resources>

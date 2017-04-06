@@ -1,0 +1,29 @@
+<resources>
+
+    <declare-styleable name="CustomGraph">
+
+        <attr name="fillColour" format="reference|color" />
+        <attr name="shouldFill" format="boolean" />
+        <attr name="borderColour" format="reference|color" />
+
+        <attr name="borderType" format="enum">
+            <enum name="plain" value="0" />
+            <enum name="dashed" value="1" />
+            <enum name="dotted" value="2" />
+        </attr>
+        
+        <attr name="borderWidth" format="dimension|reference" />
+
+        <attr name="shouldReverse" format="boolean" />
+
+        <attr name="jointType" format="enum">
+            <enum name="straight" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+
+        <attr name="shouldAnimate" format="boolean" />
+        <attr name="pointCircleRadius" format="dimension|reference" />
+
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="app_name">Graph</string>
+    <string name="pt_dialog_title">Graph Point Details</string>
+    <string name="pt_dialog_ok_btn">Yes</string>
+    
+    <string-array name="border_type">
+        <item>None</item>
+        <item>Plain</item>
+        <item>Dashed</item>
+    </string-array>
+
+    <string-array name="joint_type">
+        <item>Round</item>
+        <item>Straight</item>
+    </string-array>
+
+    <string-array name="point_type">
+        <item>Circle</item>
+        <item>Square</item>
+    </string-array>
+
+    <string-array name="scale_type">
+        <item>Fit Screen</item>
+        <item>Overflow</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="pastel_orange">#ffbe54</color>
+    <color name="candy_pink">#df6c7a</color>
+    <color name="ocean_boat_blue">#0075bf</color>
+    <color name="silver">#bebebe</color>
+    <color name="eton_blue">#a1d092</color>
+    <color name="snow">#fafafa</color>
+    <color name="ash_grey">#bababa</color>
+</resources>

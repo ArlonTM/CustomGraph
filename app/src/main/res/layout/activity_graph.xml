@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/svGraph"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    tools:context=".activities.GraphActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/hsvGraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.portfolio.arlon.graphlib.views.Graph
+                xmlns:graph="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/graph"
+                android:layout_width="330dp"
+                android:layout_height="450dp"
+                graph:graphWidth="500dp"
+                graph:graphHeight="250dp"
+                graph:scaleType="fit"
+                graph:shouldReverse="true"
+                graph:shouldFill="true"
+                graph:fillColour="@color/silver"
+                graph:borderType="dashed"
+                graph:borderColour="@color/ocean_boat_blue"
+                graph:jointType="round"
+                graph:pointSize="20dp"
+                graph:pointType="circle" />
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/llSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hsvGraph"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/OptionLayout">
+
+                <TextView
+                    style="@style/TextView"
+                    android:text="Width:" />
+
+                <EditText
+                    android:id="@+id/edtWidth"
+                    style="@style/DigitInputText"
+                    android:hint="0dp"
+                    android:text="500" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/OptionLayout">
+
+                <TextView
+                    style="@style/TextView"
+                    android:text="Height:" />
+
+                <EditText
+                    android:id="@+id/edtHeight"
+                    style="@style/DigitInputText"
+                    android:hint="0dp"
+                    android:text="250" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/OptionLayout">
+
+                <TextView
+                    style="@style/TextView"
+                    android:text="Scale Type:" />
+
+                <Spinner
+                    android:id="@+id/spinScaleType"
+                    style="@style/Spinner"
+                    android:entries="@array/scale_type" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/OptionLayout">
+
+                <TextView
+                    style="@style/TextView"
+                    android:text="Reverse Graph:" />
+
+                <Switch
+                    android:id="@+id/switchRevGraph"
+                    style="@style/Switch" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/OptionLayout">
+
+                <TextView
+                    style="@style/TextView"
+                    android:text="Fill Graph:" />
+
+                <Switch
+                    android:id="@+id/switchFillGraph"
+                    style="@style/Switch" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/OptionLayout">
+
+                <TextView
+                    style="@style/TextView"
+                    android:text="Border Type:" />
+
+                <Spinner
+                    android:id="@+id/spinBorderType"
+                    style="@style/Spinner"
+                    android:entries="@array/border_type" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/OptionLayout">
+
+                <TextView
+                    style="@style/TextView"
+                    android:text="Border Size:" />
+
+                <EditText
+                    android:id="@+id/edtBorderSize"
+                    style="@style/DigitInputText"
+                    android:hint="0dp"
+                    android:text="2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/OptionLayout">
+
+                <TextView
+                    style="@style/TextView"
+                    android:text="Point Size:" />
+
+                <EditText
+                    android:id="@+id/edtPtSize"
+                    style="@style/DigitInputText"
+                    android:hint="0dp"
+                    android:text="20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/OptionLayout">
+
+                <TextView
+                    style="@style/TextView"
+                    android:text="Point Type:" />
+
+                <Spinner
+                    android:id="@+id/spinPointType"
+                    style="@style/Spinner"
+                    android:entries="@array/point_type" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/OptionLayout">
+
+                <TextView
+                    style="@style/TextView"
+                    android:text="Joint Type:" />
+
+                <Spinner
+                    android:id="@+id/spinJointType"
+                    style="@style/Spinner"
+                    android:entries="@array/joint_type" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/OptionLayout"
+            android:layout_below="@id/llSettings">
+
+            <Button
+                android:id="@+id/btnSettings"
+                style="@style/Button"
+                android:layout_margin="10dp"
+                android:text="Apply Settings"
+                android:onClick="apply" />
+
+            <Button
+                style="@style/Button"
+                android:layout_margin="10dp"
+                android:text="Reshuffle Items"
+                android:onClick="reshuffle" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+</ScrollView>
